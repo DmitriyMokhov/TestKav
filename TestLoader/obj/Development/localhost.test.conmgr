@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="localhost test"
+  DTS:DTSID="{5188C805-6EF0-427D-B2DA-635BC5B25246}"
+  DTS:CreationName="OLEDB">
+  <DTS:PropertyExpression
+    DTS:Name="InitialCatalog">@[$Project::DB]</DTS:PropertyExpression>
+  <DTS:PropertyExpression
+    DTS:Name="ServerName">@[$Project::Server]</DTS:PropertyExpression>
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectionString="Data Source=bi01\inst01;Initial Catalog=test;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
+  </DTS:ObjectData>
+</DTS:ConnectionManager>
